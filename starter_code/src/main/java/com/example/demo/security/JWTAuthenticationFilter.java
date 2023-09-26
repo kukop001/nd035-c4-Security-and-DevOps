@@ -9,6 +9,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -22,6 +24,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import static com.auth0.jwt.algorithms.Algorithm.HMAC512;
 
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
+	
+	private static final Logger log = LoggerFactory.getLogger(UserDetailsServiceImpl.class);
 
 	private AuthenticationManager authenticationManager;
 
@@ -38,6 +42,7 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 			return authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(credentials.getUsername(),
 					credentials.getPassword(), new ArrayList<>()));
 		} catch (IOException e) {
+			log.error("User not found. Username: ");
 			throw new RuntimeException(e);
 		}
 	}

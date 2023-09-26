@@ -1,32 +1,39 @@
-2023-09-23 15:17:22.031  INFO 12912 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on DESKTOP-UF61QTP with PID 12912 (started by nguye in C:\project spring\project4\nd035-c4-Security-and-DevOps\starter_code)
-2023-09-23 15:17:22.037  INFO 12912 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
-2023-09-23 15:17:23.400  INFO 12912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2023-09-23 15:17:23.546  INFO 12912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125ms. Found 4 repository interfaces.
-2023-09-23 15:17:24.367  INFO 12912 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$47a38a13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-09-23 15:17:25.003  INFO 12912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-23 15:17:25.054  INFO 12912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-23 15:17:25.055  INFO 12912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2023-09-23 15:17:25.241  INFO 12912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-23 15:17:25.242  INFO 12912 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3064 ms
-2023-09-23 15:17:25.522  INFO 12912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-23 15:17:25.757  INFO 12912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-23 15:17:25.835  INFO 12912 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2023-09-27 02:01:01.690  INFO 5980 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on DESKTOP-UF61QTP with PID 5980 (started by nguye in C:\project spring\project4\nd035-c4-Security-and-DevOps\starter_code)
+2023-09-27 02:01:01.793  INFO 5980 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2023-09-27 02:01:08.582  INFO 5980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-09-27 02:01:09.014  INFO 5980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 296ms. Found 4 repository interfaces.
+2023-09-27 02:01:13.216  INFO 5980 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c279dabc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-27 02:01:17.513  INFO 5980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-27 02:01:17.701  INFO 5980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-27 02:01:17.702  INFO 5980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2023-09-27 02:01:18.707  INFO 5980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-27 02:01:18.707  INFO 5980 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 16476 ms
+2023-09-27 02:01:21.963  INFO 5980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27 02:01:23.491  INFO 5980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27 02:01:25.279  INFO 5980 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2023-09-23 15:17:25.988  INFO 12912 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2023-09-23 15:17:25.999  INFO 12912 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2023-09-23 15:17:26.362  INFO 12912 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2023-09-23 15:17:26.580  INFO 12912 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-09-23 15:17:27.622  INFO 12912 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-23 15:17:28.573  WARN 12912 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-23 15:17:28.706  INFO 12912 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2484c868, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e8fe7db, org.springframework.security.web.header.HeaderWriterFilter@3539cf45, org.springframework.web.filter.CorsFilter@19d13d04, org.springframework.security.web.authentication.logout.LogoutFilter@530df3ab, com.example.demo.security.JWTAuthenticationFilter@30d5fc1b, com.example.demo.security.JWTAuthenticationVerficationFilter@7957aa57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64908ab9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d563c13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b92ea9d, org.springframework.security.web.session.SessionManagementFilter@556a6320, org.springframework.security.web.access.ExceptionTranslationFilter@6f69e2d8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a9565d7]
-2023-09-23 15:17:28.891  INFO 12912 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-09-23 15:17:29.256  INFO 12912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-23 15:17:29.270  INFO 12912 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 7.953 seconds (JVM running for 8.555)
-2023-09-23 15:17:31.593  INFO 12912 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-23 15:17:31.594  INFO 12912 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-23 15:17:31.610  INFO 12912 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
-2023-09-23 15:17:32.222  INFO 12912 --- [http-nio-8080-exec-2] c.e.demo.controllers.UserController      : UserController.createUser - created success : 
-2023-09-23 15:17:57.800  INFO 12912 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2023-09-23 15:18:08.599  INFO 12912 --- [http-nio-8080-exec-4] c.e.demo.controllers.UserController      : UserController.findById with username Serasim2
-2023-09-23 15:18:52.966 ERROR 12912 --- [http-nio-8080-exec-5] c.e.demo.controllers.UserController      : UserController.createUser - Cannot create because the password is invalid
+2023-09-27 02:01:27.659  INFO 5980 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2023-09-27 02:01:27.668  INFO 5980 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2023-09-27 02:01:30.215  INFO 5980 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-09-27 02:01:31.262  INFO 5980 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-09-27 02:01:40.363  INFO 5980 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-27 02:01:45.480  WARN 5980 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-27 02:01:46.029  INFO 5980 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@244268a8, org.springframework.security.web.context.SecurityContextPersistenceFilter@58d79479, org.springframework.security.web.header.HeaderWriterFilter@530df3ab, org.springframework.web.filter.CorsFilter@563ab6d5, org.springframework.security.web.authentication.logout.LogoutFilter@7c39193f, com.example.demo.security.JWTAuthenticationFilter@548f4f60, com.example.demo.security.JWTAuthenticationVerficationFilter@d960561, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@495f7ca4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@470a446f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3aa63b53, org.springframework.security.web.session.SessionManagementFilter@aaa7000, org.springframework.security.web.access.ExceptionTranslationFilter@43b2e7db, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b5623b4]
+2023-09-27 02:01:46.891  INFO 5980 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-27 02:01:48.806  INFO 5980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-27 02:01:48.811  INFO 5980 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 50.738 seconds (JVM running for 53.111)
+2023-09-27 02:04:09.961  INFO 5980 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27 02:04:09.962  INFO 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-27 02:04:10.033  INFO 5980 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 71 ms
+2023-09-27 02:04:14.069 ERROR 5980 --- [http-nio-8080-exec-2] c.e.demo.controllers.UserController      : UserController.createUser - Cannot create because the password is invalid
+2023-09-27 02:04:26.455  INFO 5980 --- [http-nio-8080-exec-4] c.e.demo.controllers.UserController      : UserController.createUser - created success : 
+2023-09-27 02:04:39.051  INFO 5980 --- [http-nio-8080-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2023-09-27 02:05:22.197  INFO 5980 --- [http-nio-8080-exec-6] c.e.demo.controllers.UserController      : UserController.findById with username Serasim2
+2023-09-27 02:08:39.194  WARN 5980 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-09-27 02:08:58.808  WARN 5980 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-09-27 02:09:05.712 ERROR 5980 --- [http-nio-8080-exec-5] c.e.demo.controllers.OrderController     : Create Order Error. User not found. Username: test
+2023-09-27 02:09:19.866  INFO 5980 --- [http-nio-8080-exec-6] c.e.demo.controllers.OrderController     : Order submit
+2023-09-27 02:09:51.435  WARN 5980 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-09-27 02:09:56.150  INFO 5980 --- [http-nio-8080-exec-8] c.e.demo.controllers.OrderController     : Get Order history successful.
+2023-09-27 02:10:21.321 ERROR 5980 --- [http-nio-8080-exec-9] c.e.demo.controllers.OrderController     : Get Orders Error. User not found. Username: Serasim22
